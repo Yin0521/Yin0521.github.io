@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>表單</title>
+        <style>
+            #container{
+                width:70%;
+            }
+            p{
+                text-align:right;
+                padding-right:50px;
+            }
+            h1{
+                font-size:20px;
+            }
+            form{
+                display:grid;
+                grid-template-columns:1fr;
+                grid-auto-rows:50px;
+                width:75%;
+                margin:auto;
+            }
+            form label{
+                display:grid;
+            }
+            #time label{
+                display:block;
+            }
+            #time{
+                display:grid;
+                grid-template-columns:1fr 1fr 1fr;
+            }
+            #message{
+                width:100%;
+                height:50px;
+                resize:none;
+                
+            }
+        </style>
+    </head>
+    <body>
+      <div id="container">
+           <h1>問題與討論</h1>
+           <p>＊為必填</p>
+            <form>
+                <label>姓名或暱稱*
+                    <input type="text" id="username" name="username">
+                </label>
+                <label>Email*
+                    <input type="email" id="email" name="email">
+                </label>
+                <label>問題類型
+                    <select id="question" name="question">
+                        <option value="">請選擇問題類型</option>
+                        <option value="music">音樂</option>
+                    </select>
+                </label>
+                <label>主題*
+                    <input type="text" id="mainquestion" name="mainquestion">
+                </label>
+                <label>問題描述*
+                    <textarea id="message" name="message"></textarea>
+                </label>
+                <p></p>
+                適合回覆時間
+                <div id="time">
+                    <label><input type="radio" name="time" value="1">上午09:00-1200</label>
+                    <label><input type="radio" name="time" value="2">下午1:00-5:00</label>
+                    <label><input type="radio" name="time" value="3">晚上7:00-1000</label>
+                </div>
+                <div id="sm">
+                    <input type="submit" value="完成送出">
+                </div>
+            </form>  
+        </div>  
+    </body>
+</html>
