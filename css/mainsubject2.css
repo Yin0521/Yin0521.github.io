@@ -1,0 +1,62 @@
+@charset "utf-8";
+/*-----------------mainsubject2--------------------*/
+#subject_2{
+    margin-top:20rem;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+#subject_02left h2{
+    font-size:6.4rem;
+    font-weight:bold;
+    width:60%;
+}
+.sj2left{
+    position:relative;
+    display:inline-block;
+    width:20rem;
+    height:8rem;
+    margin-left:1rem;
+    top:-2rem;
+}
+#subject_02left p{
+    margin-top:4rem;
+    font-size:2.4rem;
+    width:50%;
+    line-height:5rem;
+}
+#subject_02right{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+.sub_02{
+    position:relative;
+    width:70%;
+    height:80%%;
+    text-align:center;            
+    margin-bottom:9rem;            
+}
+.sub_02::before{
+    position:absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    background:linear-gradient(to top,#63e3ff,#FDF6EB);
+    opacity:0.3;
+    left:0;
+    z-index:-5;
+}
+#subject_02right strong{
+    display:block;
+    font-size:1.8rem;
+    font-weight:bold;
+    margin:5rem auto;
+}
+#subject_02right p{
+    margin:0 4rem;;
+    line-height:2.5rem;
+    font-size:1.6rem;
+}
+#moblie{
+    display:none;
+}
+

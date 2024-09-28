@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*----------------------logo-----------------------*/
+#alllogo{
+    text-align:center;
+    align-items:center;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border-top:1px solid #555;
+    border-bottom:1px solid #555;
+    margin:16rem 0 7rem 0;
+    padding:14rem 0;
+}
+

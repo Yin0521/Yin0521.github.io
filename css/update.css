@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*--------------------update---------------------------*/
+#update{
+    position:relative;
+    background:url("email_bg.png");
+    opacity:0.8;
+}
+#updatebg{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding:13rem 10rem;
+}
+#update p{
+    font-size:7rem;
+    font-weight:bold;
+    text-align:center;
+}
+.updatebt{
+    text-align:center;
+    font-size:2rem;
+    position:relative;               
+    top:30%;
+    width:100%;
+}
+#email{
+    padding:3rem;
+    width:50%; 
+    padding-right:30%;
+    font-size:2rem;
+}
+.updatebt button{
+    position:absolute;
+    font-size:2rem;
+    font-weight:bold;
+    background-color:#00D1ff;
+    color:white;
+    width:19rem;
+    padding:2rem 0;
+    border:2px solid black;
+    cursor:pointer;
+    right:9%;
+    top:1rem;
+}
+
