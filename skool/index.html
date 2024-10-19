@@ -1,0 +1,1188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/shere.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/banner.css" rel="stylesheet" type="text/css">
+<link href="css/mainsubject1.css" rel="stylesheet" type="text/css">
+<link href="css/mainsubject2.css" rel="stylesheet" type="text/css">
+<link href="css/slider.css" rel="stylesheet" type="text/css">
+<link href="css/section2.css" rel="stylesheet" type="text/css">
+<link href="css/section3.css" rel="stylesheet" type="text/css">
+<link href="css/alllogo.css" rel="stylesheet" type="text/css">
+<link href="css/update.css" rel="stylesheet" type="text/css">
+<link href="css/footer.css" rel="stylesheet" type="text/css">
+<meta name="description" content="網頁描述">
+<meta name="Keywords" content="關鍵字">
+<title>skool</title>
+    <style>
+        @media screen and (max-width:400px){
+            .btn{
+                font-size:1.6rem;
+                background-color:#010101;
+                color:white;
+                width:100%;
+                padding:2rem 0;
+                border:1px solid black;
+                position:relative;
+                cursor:pointer;
+            }
+            .btn::after{
+                width:100%;
+                height:100%;
+                content: '';
+                border:1px solid black;
+                position:absolute;
+                top:0.2rem;
+                left:-0.5rem;
+                background-color:white;
+                z-index:-5;
+            }
+            .yello{
+                width:5rem;
+                height:2rem;
+                background-color:#fab246;
+                position:absolute;
+                top:0rem;
+                left:0rem;
+                border:1px solid black;
+                border-radius:2rem;
+            }
+            .yello::before{
+                content:"";
+                position:absolute;
+                width:100%;
+                height:100%;
+                border:1px solid black;
+                border-radius:2rem;
+                top:0.2rem;
+                left:-0.3rem;
+                z-index:-10;
+            }
+            .writebtn{
+                font-size:1.6rem;
+                font-weight:bold;
+                background-color:white;
+                color:#010101;
+                width:100%;
+                padding:2rem 0;
+                border:1px solid black;
+                position:relative;
+                cursor:pointer;
+                margin-left:1rem;
+            }
+            .writebtn::after{
+                width:100%;
+                height:100%;
+                content:'';
+                border:1px solid black;
+                position:absolute;
+                top:0.4rem;
+                left:-1rem;
+                background-color:#00D1ff;
+                z-index:-5;
+            }
+            .img{
+                position: absolute;
+                top:-0.7rem;
+                left:0.8rem;
+                z-index:2;
+                width:85%;
+                height:auto;
+            }
+            .imgman{
+                position: absolute;
+                top:-0.4rem;
+                left:1rem;
+                z-index:2;
+                width:85%;
+                height:auto;
+            }
+            /*---------------header---------------*/
+            header {
+                margin-top:4rem;
+                display:block;
+            }
+            header #logo{
+                text-align:center;
+                margin:0;
+            }
+            header #logo img{
+                width:50%;              
+            }
+            header nav{
+                margin:auto 2rem;
+            }
+            header ul li{
+                display:inline-block;
+                text-align:center;
+                font-size:1.8rem;
+                margin:3rem 0.3rem;
+            }
+            header ul li a{
+                text-decoration:none;
+                color:black;
+            }
+            #registerbox{
+                display:none;
+            }
+            /*-----------banner-------------------*/
+            #banner{
+                margin-top:4rem;
+                display:block;
+                text-align:center;
+            }
+            #bannertext_1{
+                font-size:3.2rem;
+                font-weight:600;
+            }
+            .banner_img{
+                position:relative;
+                display:inline;
+                margin:0 8rem 0 1rem;;
+                left:1rem;
+                top:1rem;
+            }
+            .redborder{
+                position:relative;
+                left: 0;
+            }
+            .red{
+                width:5rem;
+                height:2.5rem;
+                background-color:#f13327;
+                position:absolute;
+                top:0.4rem;
+                left:3.5rem;
+                border:1px solid black;
+                border-radius:10rem; 
+                margin-left:2rem;
+            }
+            .red::after{
+                content:"";
+                position:absolute;
+                width:100%;
+                height:100%;
+                border:1px solid black;
+                border-radius:10rem;
+                top:0.2rem;
+                left:-0.4rem;
+                z-index:-10;
+            }
+
+            .line{
+                position:absolute;
+                width:2.5rem;
+                height:0.3rem;
+                background-color:white;
+                position:absolute;
+                top:1.5rem;
+                left:6.5rem;
+                border-radius:20% 50% 20% 50%;
+            }
+            .arrow {
+                position:absolute;
+                border:0 solid white;
+                border-width:0 3px 3px 0;
+                display:inline-block;
+                padding:5px;
+                transform:rotate(-45deg);
+                top:1rem;
+                left:7.9rem;
+                border-radius:0% 20% 28% 20%;
+            }
+            #bantext{
+                margin-left:10rem;
+            }
+            #bannertext_1 p{
+                line-height:normal;
+                
+            }
+            #bannertext_2 p{
+                width:100%;
+                margin:1.8rem auto;
+                font-size:1.8rem;
+                line-height:2.3rem;;
+            }
+            .start{
+                display:none;
+            }
+            #bannerright img{
+                width:50%;
+            }
+            #registerbox2{
+                margin:4rem 0;
+            }
+            /*----------------subject01-----------------------*/
+            #subject_1{
+                display:block;
+                position:relative;
+                padding:10rem 0;
+            }
+            #subject_01left img{
+                position:relative;
+                width:100%;
+                height:auto;
+                z-index:10;
+            }
+            .simpleleft{
+                position:absolute;
+                width:10rem;
+                height:10rem;
+                background-color:#877962;
+                border-radius:0% 3% 100% 3%;
+                top:10rem;
+            }
+            .simpleright{
+                position:absolute;
+                width:15rem;
+                height:13rem;
+                background-color:#D3C0A1;
+                border-radius:100% 3% 0% 3%;
+                left:18rem;
+                top:30rem;
+            }
+            #subjtct_01right{
+                position:relative;
+                margin:4rem auto;
+                text-align:center;
+            }
+            #subjtct_01right h2{
+                font-size:2rem;
+                font-weight:bold;
+                line-height:normal;
+                margin-left:3rem
+            }
+            .sjright1{
+                position:relative;
+                display:inline;
+                margin:0 10rem 0 -2rem;
+                left:3rem;
+                top:-0.1;
+            }
+            .sjright2{
+                position:relative;
+                display:inline;
+                margin:0 0 0 5rem;
+                left:-7rem;
+                top:0rem;
+            }
+            /*-----------------mainsubject2--------------------*/
+            #subject_2{
+                margin-top:0rem;
+                display:block;
+            }
+            #PC{
+                display:none;
+            }
+            #subject_02left #moblie{
+                display:block;
+                font-size:3.2rem;
+                font-weight:bold;
+                width:65%;
+            }
+            .sj2left{
+                position:relative;
+                display:inline;
+                top:1rem;
+            }
+            #subject_02left p{
+                margin-top:4rem;
+                font-size:1.6rem;
+                width:70%;
+                line-height:2.5rem;
+            }
+            #subject_02right{
+                display:grid;
+                grid-template-columns:1fr 1fr;
+                text-align:center;
+            }
+            .sub_02{
+                position:relative;
+                text-align:center;            
+                margin-bottom:3rem;  
+                width:100%;
+            }
+            .sub_02::before{
+                position:absolute;
+                content:"";
+                width:100%;
+                height:100%;
+                background:linear-gradient(to top,#63e3ff,#FDF6EB);
+                opacity:0.3;
+                left:0;
+                z-index:-5;
+            }
+            #subject_02right strong{
+                display:block;
+                font-size:1rem;
+                font-weight:bold;
+                margin:2rem 0;
+            }
+            #subject_02right p{
+                margin:0;
+                line-height:normal;
+                font-size:1rem;
+            }
+            .sj2start{
+                display:block;
+                margin-bottom:2rem;
+            }
+            #subject_02right img{
+                width:50%;
+                height: auto;      
+            }
+            /*-----------------------slider---------------------------*/
+            section{
+                position:relative;
+                padding:5rem 0;
+            }
+            #sliderbg h2{
+                font-size:2.4rem;
+                font-weight:bold;
+                text-align:center;
+                width:100%;
+                margin:3rem auto;
+            }
+            .slider_img{
+                position:relative;
+                display:inline;
+                margin:0 6rem 0 1rem;
+                top:0.5rem;
+            }
+            #slider{
+                display:grid;
+                margin:auto;
+                width:100%;
+                grid-template-columns:repeat(9,1fr);
+                overflow:scroll;
+                
+            }
+            .slider_1{
+                width:98%;
+                position:relative;
+                padding:7rem;
+            }
+            .slider_bg{
+                position:relative;
+                text-align:center;
+            }
+            .sd_bg{
+                position:relative;
+                width:98%;
+                height:auto;
+            }
+            .sd1_man{
+                position:absolute;
+                left:5rem;
+                top:4.2rem;
+                width:70%;
+                height:auto;
+            }
+            .sd1_effect{
+                position:absolute;
+                top:0;
+                left:0;
+                opacity:0.9;
+                width:70%;
+                height:auto;
+            }
+            .sd_h1{
+                font-size:1.4rem;
+                font-weight:bold;
+                margin:3rem 0;
+            }
+            .sd_text{
+                font-size:1.0rem;
+                font-style: oblique;
+                margin:1.5rem 0.5rem;
+                line-height:1.8rem;
+            }
+            .enroll{
+                margin:1rem;
+                display:block;
+                text-align:center;
+                width:80%;     
+            }
+            
+            .enroll p{
+                margin:1rem;
+                font-size:1.2rem;
+                font-weight:bold;    
+            }
+            .enroll img{
+                vertical-align:text-bottom;
+                margin:0 1rem;
+                width:7%;
+                padding:0.5rem;
+            }
+            .sd2_man{
+                position:absolute;
+                top:3.1rem;
+                left:10rem;
+                width:50%;
+                height:auto;
+            }
+            .writebtn2{
+                font-size:1.6rem;
+                font-weight:bold;
+                background-color:#00D1ff;
+                color:white;
+                width:100%;
+                padding:2rem 0;
+                border:1px solid black;
+                position:relative;
+                cursor:pointer;
+            }
+            .writebtn2::after{
+                width:100%;
+                height:100%;
+                content:'';
+                border:1px solid black;
+                position:absolute;
+                top:0.5rem;
+                left:-1rem;
+                background-color:white;
+                z-index:-5;
+            }
+            .sd2_effect{
+                position:absolute;
+                top:2rem;
+                left:6rem;
+                width:80%;
+                height:auto;
+            }
+            .sd3_man{
+                position:absolute;
+                top:1.6rem;
+                left:5.8rem;      
+                width:70%;
+                height:auto;
+            }
+            #slider_bottom{
+                display:none;
+            }
+            #slider_moble_bottom{
+                font-size:4rem;
+                color:#fff;
+                border:0;
+                cursor:pointer;
+                display:inline-block;
+                opacity:0.6
+            }
+            .pre{
+                position:absolute;
+                background-color:#1bb;
+                border-radius:0 16px 16px 0;
+                left:0;
+                top:45%;
+            }
+            .next{
+                position:absolute;
+                right:0;
+                top:45%;
+                background-color:#1bb;
+                border-radius:16px 0 0 16px;
+            }
+            /*-------------------section2----------------------*/
+            #section2bg{
+                background:linear-gradient(to right,#00d1ff,#001aff);
+                opacity:0.9;
+                display:block;
+                color:white;
+                height:40rem;
+                margin:0 auto;
+            }
+            #section2left{
+                margin:1rem;
+                padding:3rem;
+            }
+            #section2left h2{
+                font-size:2rem;
+                font-weight:bold;
+                line-height:normal;
+                margin-bottom:2rem;
+            }
+            #section2left p{
+                font-size:1.6rem;
+                line-height:3rem;
+            }
+            .section2bt_PC{
+                display:none;
+            }
+            .section2bt_moblie{
+                display:block;
+                margin:1rem;
+                width:40%;
+                padding:1rem;
+                font-size:1rem;
+            }
+            #section2right{
+                position:relative;
+            }
+            #section2right img,#section2left img{
+                position:absolute;
+            }
+            .section2right_bg{
+                width:100%;
+                height:100%;
+                z-index:-5;
+                left:8rem;
+                top:-25rem;
+            }/*----------------------找不到------------------*/
+            .section2right_man{
+                bottom:9.2rem;
+                right:-3rem;
+                width:100%;
+            }
+            .yellostar{
+                left:12rem;
+                top:-25rem;
+                width:10%;
+            }
+            .star1{
+                left:10rem;
+                bottom:14rem;
+                width:10%;
+            }
+            .star2{
+                left:14rem;
+                bottom:10rem;
+                width:10%;
+            }
+            .star3{
+                left:14rem;
+                bottom:13rem;
+                width:10%;
+            }
+            /*------------------section3----------------------*/
+            #section3{
+                display:block;
+                margin:0;
+            }
+            #section3left{
+                width:80%;
+                position:relative;
+                text-align:center;
+                padding:4rem;
+                overflow:hidden;
+            }
+            #section3left::after{
+                background-color:#FDF6EB;
+                content:"";
+                width:100%;
+                height:100%;
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:-9;
+            }
+            .section3man{
+                position:relative;
+                width:80%;
+            }
+            .section3bg{
+                position:absolute;
+                right:2rem;
+                top:-1.9rem; 
+                width:30%;
+            }
+            .section3_bg2{
+                position:absolute;
+                left:2rem;
+                bottom:0rem;
+                width:30%;
+            }
+            #section3right{
+                margin-left:0;
+                text-align:center;
+            }
+            #section3right h2{
+                font-size:2rem;
+                font-weight:bold;
+                margin-bottom:4rem;
+            }
+            .setion3img{
+                position:relative;
+                display:inline;
+                margin:0 4rem;
+                left:-2.5rem;
+                top:0.5rem;
+            }
+            #section3right_text{
+                font-size:1.2rem;
+                line-height:1.9rem;
+                margin-bottom:3rem; 
+            }
+            #section3right_tick{
+                display:grid;
+                grid-template-columns:1fr 1fr;
+                grid-gap:1rem;
+                margin:auto;
+                width:50%;
+                
+            }
+            #section3right_tick p{
+                font-size:1rem;
+                font-weight:400;
+                font-style:oblique;
+            }
+            #section3right_tick img{
+                margin-right:1rem;
+                width:20%;
+            }
+            .section3end{
+                margin-top:3rem;
+                font-size:1rem;
+                text-align:center;
+            }
+            .section3end span{
+                color:black;
+                text-decoration:none;
+                border-bottom:2px solid black;
+                font-weight:bold;
+            }
+            /*----------------------logo-----------------------*/
+            #alllogo{
+                text-align:center;
+                align-items:center;
+                display:grid;
+                grid-template-columns:1fr 1fr;
+                border-top:1px solid #555;
+                border-bottom:1px solid #555;
+                margin:0 0 5rem 0;
+                padding:7rem 0;
+                grid-gap:2rem;
+            }
+            #alllogo img{
+                width:70%;
+            }
+            /*--------------------update---------------------------*/
+            #update{
+                position:relative;
+                background:url("image/email_bg.png");
+                background-size:100%;
+                opacity:0.8;
+                height:16rem;
+                
+            }
+            #updatebg{
+                display:block;
+                padding:0;
+                padding:2rem;
+            }
+            #update p{
+                font-size:2.4rem;
+                font-weight:bold;
+                text-align:center;
+                padding:0.5rem;
+            }
+            .updatebt{
+                text-align:center;
+                font-size:2rem;
+                position:relative;               
+                top:30%;
+                width:100%;
+                margin-top:2rem;
+            }
+            #email{
+                padding:1rem;
+                width:50%; 
+                padding-right:30%;
+                font-size:1rem;
+            }
+            .updatebt button{
+                position:absolute;
+                font-size:1rem;
+                font-weight:bold;
+                background-color:#00D1ff;
+                color:white;
+                width:20%;
+                padding:0.6rem 0;
+                border:1px solid black;
+                cursor:pointer;
+                right:9%;
+                top:0.5rem;
+            }
+            /*------------------footer-----------------------------*/
+            #address{
+                display:grid;
+                grid-template-columns:2fr 1fr 1fr 1fr;
+                margin:2rem 0;
+                font-size:1rem;
+            }
+            #addresslogo p{
+                margin:0;
+            }
+            #addresslogo img{
+                width:70%;
+                margin-bottom:1rem;
+            }
+            .alink h3{
+                font-weight:bold;
+            }
+            .alink p{
+                margin:0.5rem 0;
+                font-style:oblique;
+            }
+            .alink p a{
+                font-size:0.8rem;
+                color:black;
+                text-decoration:none;
+            }
+            .alink p a:hover{
+                font-style:normal;
+            }
+            #yin{
+                display:grid;
+                grid-template-columns:2fr 1fr;
+                border-top:1px solid black;
+                font-size:0.8rem;
+                font-style:oblique;
+                padding:2rem 0;
+                margin:0 0.7rem;
+            }
+            .yinleft{
+                text-align:start;
+            }
+            .yinright{
+                text-align:end;
+            }
+        }
+        @media screen and (max-width:670px){
+            
+        }          
+    </style>
+    <script src="js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <h1><a href="#"><img src="image/skool.png" alt="SKOOL VR"></a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <div id="registerbox">
+                <button class="btn">註　冊</button>
+            </div>
+        </header>
+        <div id="banner">
+            <div id="bannerleft">
+                <div id="bannertext_1">
+                    <p>Virtual<span class="banner_img"><span class="yello"><img src="image/textgirl.png" class="img"></span></span>Reality</p>   
+                    <div class="redborder">
+                        <p class="red"></p>
+                        <div class="line"></div>
+                        <div class="arrow"></div>
+                    </div>
+                    <p id="bantext">Augmented</p>
+                    <p>Education.</p>              
+                </div>
+                <div id="bannertext_2">
+                    <p>Virtual reality, or VR, is taking off in education with an increasing number of schools adopting the technology,</p>
+                </div>
+                <div class="start">
+                    <button class="writebtn">Get Started</button>
+                </div>
+            </div>  
+            <div id="bannerright">
+                <img src="image/banner.png">
+            </div>           
+        </div>
+        <div id="registerbox2">
+            <button class="btn">註　冊</button>
+        </div>
+        <main>
+            <div id="subject_1">
+                <div id="subject_01left">
+                    <div class="simpleleft"></div>
+                    <div class="simpleright"></div>
+                    <img src="image/subject_1_man.png">
+
+                </div>
+                <div id="subjtct_01right">
+                    <h2>Wear Headsetand <span class="sjright1"><span class="yello"><img src="image/textgirl.png" class="img"></span></span>and take a deep dive 
+                        <p>into the ocean of </p>
+                        <p><span class="sjright2"><span class="yello"><img src="image/textman.png" class="imgman"></span></span><spen id="sj1reight_end">Science.</spen></p>
+                    </h2>
+
+                </div>
+            </div>
+            <div id="subject_2">
+                <div id="subject_02left">
+                    <div>
+                        <h2 id="PC">Virtual <span class="sj2left"><span class="yello"><img src="image/textman.png" class="imgman"></span></span>Classroom is now Reality !!</h2>
+                        <h2 id="moblie">Virtual <span class="sj2left"><span class="yello"><img src="image/textgirl.png" class="img"></span></span>Classroom is now Reality !!</h2>
+                    </div>
+                    <div>
+                        <p>With VR, they aren't limited to word descriptions or book illustrations; they can explore the topic and see how things are put together.</p>
+                    </div>
+                    <div class="start sj2start">
+                        <button class="writebtn">Get Started</button>
+                    </div>
+                </div>
+                <div id="subject_02right">
+                    <div class="sub_02">
+                        <div>
+                            <img src="image/subject_2_photo1.png">
+                        </div>
+                        <p><strong>Engaging Classroom</strong></p>
+                        <p>Students will no longer just hear and see, they will also participate and have practical experiences.</p>
+                    </div>
+                    <div class="sub_02">
+                        <div>
+                            <img src="image/subject_2_photo2.png">
+                        </div>
+                        <p><strong>Virtual Laboratory</strong></p>
+                        <p>Students will no longer just hear and see, they will also participate and have practical experiences.</p>
+                    </div>
+                    <div class="sub_02">
+                        <div>
+                            <img src="image/subject_2_photo3.png">
+                        </div>
+                        <p><strong>Fun with VR</strong></p>
+                        <p>A Imagine taking a trip to Mars, or watching how 8 skeleton takes a human form, it would be so fun!</p>
+                    </div>
+                    <div class="sub_02">
+                        <div>
+                            <img src="image/subject_2_photo4.png">
+                        </div>
+                        <p><strong>Interactive LearningR</strong></p>
+                        <p>Complex concepts will be now easier to understand with VR, you won't just read theories you will see them!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section>
+            <div id="sliderbg">
+                <h2>Which subjects can 
+                <p>benefit from<span class="slider_img"><span class="yello"><img src="image/textman.png" class="imgman"></span></span>VR</p>
+                </h2>
+                <div id="slider">
+                    <div class="slider_1">
+                        <div class="slider_bg">                  
+                            <img src="image/slider1_bg.png" class="sd_bg">
+                            <img src="image/slider1_girl.png" class="sd1_man">
+                            <img src="image/slider1_effect.png" class="sd1_effect">
+                        </div>
+                        <p class="sd_h1">Science Education</p>
+                        <p class="sd_text">There are many ways that VR can be used to teach science, but biology and chemistry are perfect examples.</p>
+                        <div class="enroll">
+                            <button class="writebtn">Enroll Now</button>
+                            <p><img src="image/slider_star.png">4.5 (120 Reviews)</p>
+                        </div>
+                    </div>
+                    <div class="slider_1">
+                        <div class="slider_bg">
+                            <img src="image/slider2_bg.png"  class="sd_bg">
+                            <img src="image/slider2_girl.png" class="sd2_man">
+                            <img src="image/slider2_effect.png" class="sd2_effect">
+                        </div>
+                        <p class="sd_h1">Learn Virtual Geography</p>
+                        <p class="sd_text">VR provides easy usability, remote access, and also a safe environment without compromising on learning.</p>
+                        <div class="enroll">
+                            <button class="writebtn2">Enroll Now</button>
+                            <p><img src="image/slider_star.png">4.5 (120 Reviews)</p>
+                        </div>
+                    </div>
+                    <div class="slider_1">
+                        <div class="slider_bg">
+                            <img src="image/slider3_bg.png"  class="sd_bg">
+                            <img src="image/slider3_man.png" class="sd3_man">
+                        </div>
+                        <p class="sd_h1">Virtual Gaming</p>
+                        <p class="sd_text">Stay physically active while experiencing all the thrills and excitement instead of sitting on a couch with a controller.</p>
+                        <div class="enroll">
+                            <button class="writebtn">Enroll Now</button>
+                            <p><img src="image/slider_star.png">4.5 (120 Reviews)</p>
+                        </div>
+                    </div>
+                    <div class="slider_1">
+                        <div class="slider_bg">                  
+                            <img src="image/slider1_bg.png" class="sd_bg">
+                            <img src="image/slider1_girl.png" class="sd1_man">
+                            <img src="image/slider1_effect.png" class="sd1_effect">
+                        </div>
+                        <p class="sd_h1">Science Education</p>
+                        <p class="sd_text">There are many ways that VR can be used to teach science, but biology and chemistry are perfect examples.</p>
+                        <div class="enroll">
+                            <button class="writebtn">Enroll Now</button>
+                            <p><img src="image/slider_star.png">4.5 (120 Reviews)</p>
+                        </div>
+                    </div>
+                    <div class="slider_1">
+                        <div class="slider_bg">
+                            <img src="image/slider2_bg.png"  class="sd_bg">
+                            <img src="image/slider2_girl.png" class="sd2_man">
+                            <img src="image/slider2_effect.png" class="sd2_effect">
+                        </div>
+                        <p class="sd_h1">Learn Virtual Geography</p>
+                        <p class="sd_text">VR provides easy usability, remote access, and also a safe environment without compromising on learning.</p>
+                        <div class="enroll">
+                            <button class="writebtn2">Enroll Now</button>
+                            <p><img src="image/slider_star.png">4.5 (120 Reviews)</p>
+                        </div>
+                    </div>
+                    <div class="slider_1">
+                        <div class="slider_bg">
+                            <img src="image/slider3_bg.png"  class="sd_bg">
+                            <img src="image/slider3_man.png" class="sd3_man">
+                        </div>
+                        <p class="sd_h1">Virtual Gaming</p>
+                        <p class="sd_text">Stay physically active while experiencing all the thrills and excitement instead of sitting on a couch with a controller.</p>
+                        <div class="enroll">
+                            <button class="writebtn">Enroll Now</button>
+                            <p><img src="image/slider_star.png">4.5 (120 Reviews)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slider_1">
+                        <div class="slider_bg">                  
+                            <img src="image/slider1_bg.png" class="sd_bg">
+                            <img src="image/slider1_girl.png" class="sd1_man">
+                            <img src="image/slider1_effect.png" class="sd1_effect">
+                        </div>
+                        <p class="sd_h1">Science Education</p>
+                        <p class="sd_text">There are many ways that VR can be used to teach science, but biology and chemistry are perfect examples.</p>
+                        <div class="enroll">
+                            <button class="writebtn">Enroll Now</button>
+                            <p><img src="image/slider_star.png">4.5 (120 Reviews)</p>
+                        </div>
+                    </div>
+                    <div class="slider_1">
+                        <div class="slider_bg">
+                            <img src="image/slider2_bg.png"  class="sd_bg">
+                            <img src="image/slider2_girl.png" class="sd2_man">
+                            <img src="image/slider2_effect.png" class="sd2_effect">
+                        </div>
+                        <p class="sd_h1">Learn Virtual Geography</p>
+                        <p class="sd_text">VR provides easy usability, remote access, and also a safe environment without compromising on learning.</p>
+                        <div class="enroll">
+                            <button class="writebtn2">Enroll Now</button>
+                            <p><img src="image/slider_star.png">4.5 (120 Reviews)</p>
+                        </div>
+                    </div>
+                    <div class="slider_1">
+                        <div class="slider_bg">
+                            <img src="image/slider3_bg.png"  class="sd_bg">
+                            <img src="image/slider3_man.png" class="sd3_man">
+                        </div>
+                        <p class="sd_h1">Virtual Gaming</p>
+                        <p class="sd_text">Stay physically active while experiencing all the thrills and excitement instead of sitting on a couch with a controller.</p>
+                        <div class="enroll">
+                            <button class="writebtn">Enroll Now</button>
+                            <p><img src="image/slider_star.png">4.5 (120 Reviews)</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="slider_bottom">
+                    <div id="sliderbt1" class="black"></div>
+                    <div id="sliderbt2" class="white"></div>
+                    <div id="sliderbt3" class="white"></div>
+                </div>
+                <span id="slider_moble_bottom">
+                    <div class="pre">＜</div>
+                    <div class="next">＞</div>
+                </span>
+            </div>
+        </section>
+        <section>
+            <div id="section2bg">
+                <div id="section2left">
+                    <h2>Get Experience Virtual Tours for Science</h2>
+                    <p>With VR, they aren't limited to word descriptions or </p>
+                    <p>book illustrations; they can explore </p>
+                    <p>the topic and see how things are put together.</p>
+                    <button class="btn section2bt_PC">Contact Us</button>
+                    <button class="btn section2bt_moblie">註　冊</button>
+                    <img src="image/section2_star1.png" class="star1">
+                    <img src="image/section2_srar2.png" class="star2">
+                    <img src="image/section2_star3.png" class="star3">
+                </div>
+                <div id="section2right">
+                    <img src="image/section2_man.png" class="section2right_man">
+                    <img src="image/section2_manbg.png"image/Topology-2.png"" class="section2right_bg">
+                    <img src="image/section2_star.png" class="yellostar">          
+                </div>
+        </section>
+        <section>
+            <div id="section3">
+                <div id="section3left">
+                    <img src="image/section3_man.png" class="section3man">
+                    <img src="image/section3_manredbg.png" class="section3bg">
+                    <img src="image/section3_manwhitebg.png" class="section3_bg2">
+                </div>
+                <div id="section3right">
+                    <h2>Making Students <p>Creative<span class="setion3img"><span class="yello"><img src="image/textgirl.png" class="img"></span></span>Future</p></h2>
+                    <div id="section3right_text">
+                        <p>Give your child an easy way</p>
+                        <p>to understand science.fotonVR increases interest, adds fun, has international level</p>
+                        <p>content, helps to understand the hard concept and that's why</p>
+                        <p>each parent order fotonVR kit for their child.</p>
+                    </div>
+                    <div id="section3right_tick">
+                        <p><img src="image/Check_mark.png"image/Check mark.png"">Critical Solutions</p>
+                        <p><img src="image/Check_mark.png">Creativity</p>
+                        <p><img src="image/Check_mark.png">Digital Litercy</p>
+                        <p><img src="image/Check_mark.png">Communication</p>
+                    </div>
+                </div>
+            </div>
+            <p class="section3end">Over <span>17,000+ Users all</span> over the world</p>
+        </section>
+        <div id="alllogo">
+            <div><img src="image/skool.png"></div>
+            <div><img src="image/udemy.png"></div>
+            <div><img src="image/oculus.png"></div>
+            <div><img src="image/Microsoft.png"></div>
+        </div>
+        <div id="update">
+            <div id="updatebg">  
+                <div>
+                    <p>Subscribe for</p>
+                    <p>Offer Updates</p>
+                </div>
+                <div>
+                    <div class="updatebt">
+                        <form action="" method="post" autocomplete="off">
+                        <input id="email" type="email" name="email" placeholder="Enter You'r Email">
+                        <button>Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="address">
+                <div id="addresslogo">
+                    <img src="image/skool.png">
+                    <p>Saas Lorem ipsum dolor sit </p>
+                    <p>amet, consectetur adipiscing</p>
+                    <p>elit. Consequat</p>
+                </div>
+                <div class="alink">
+                    <h3>Company</h3>
+                    <p><a href="#">About Us</a></p>
+                    <p><a href="#">Careers</a></p>
+                    <p><a href="#">Press Kit</a></p>
+                    <p><a href="#">Contact Us</a></p>
+                </div>
+                <div class="alink">
+                    <h3>Resources</h3>
+                    <p><a href="#">Blog</a></p>
+                    <p><a href="#">Help Center</a></p>
+                    <p><a href="#">UX Research Guide</a></p>
+                    <p><a href="#">Case Studies</a></p>
+                </div>
+                <div class="alink">
+                    <h3>Product</h3>
+                    <p><a href="#">Pricing</a></p>
+                    <p><a href="#">Enterprise</a></p>
+                    <p><a href="#">Integrate</a></p>
+                    <p><a href="#">What's New</a></p>
+                </div>
+            </div>
+            <div id="yin">
+                <p class="yinleft">Copyright © 2022 Musemind | All rights roserved.</p>
+                <p class="yinright">YiN designed</p>
+            </div>
+        </footer>
+    </div>
+    <div id="totop"><span class="material-icons">expand_less</span></div>
+    <style>
+        #totop{
+            position:fixed;
+            right:2rem;
+            bottom:2rem;
+            width:5rem;
+            height:5rem;
+            background-color:#1BB;
+            border-radius:2.5rem;
+            cursor:pointer;
+            opacity:0.8;
+        }
+        #totop span{
+            display:block;
+            font-size:4rem;
+            text-align:center;
+            line-height:5rem;
+            color:#fff;
+        }
+    </style>
+    <script>
+    $(document).ready(function(){
+        $('#sliderbt1').click(function(){
+           $('#slider').animate({
+               left:'0%'
+           },1000,function(){
+               $('#sliderbt1,#sliderbt2,#sliderbt3').removeClass();
+               $('#sliderbt1').addClass('black');
+               $('#sliderbt2').addClass('white');
+               $('#sliderbt3').addClass('white');
+             });
+        }); 
+        $('#sliderbt2').click(function(){
+           $('#slider').animate({
+               left:'-100%'
+           },1000,function(){
+               $('#sliderbt1,#sliderbt2,#sliderbt3').removeClass();
+               $('#sliderbt1').addClass('white');
+               $('#sliderbt2').addClass('black');
+               $('#sliderbt3').addClass('white');
+             });
+        }); 
+        $('#sliderbt3').click(function(){
+           $('#slider').animate({
+               left:'-200%'
+           },1000,function(){
+               $('#sliderbt1,#sliderbt2,#sliderbt3').removeClass();
+               $('#sliderbt1').addClass('white');
+               $('#sliderbt2').addClass('white');
+               $('#sliderbt3').addClass('black');
+             });
+        }); 
+     });
+    </script>
+    <script>
+        $('#totop').hide();
+        height=$(window).height();
+        $(window).scroll(function(){
+            fromTop=$(this).scrollTop();
+            if(fromTop>height){
+                $('#totop').fadeIn(800);
+            }else{
+                $('#totop').fadeOut();
+            };
+            $('#totop').click(function(){
+                $('html,body').stop().animate({
+                    scrollTop:'0'
+                },800);
+            });
+        });
+        var sliderscroll=$('.slider_bg').outerWidth();
+        $('#slider').scrollLeft(sliderscroll);
+        $('.next').click(function(){
+            $('#slider').animate({
+                scrollLeft:'+1800%'
+            },800);
+        });
+        $('.pre').click(function(){
+            $('#slider').animate({
+                scrollLeft:'50%'
+            },800);
+        });
+        
+    </script>
+</body>
+</html>
