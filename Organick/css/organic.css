@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*---------------------Organic------------------*/
+    #organic{
+        background-color:#274C5B;    
+    }
+    .organicBox{
+        width:90%;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        margin:0 auto;
+        padding:10% 0;
+        grid-gap:4rem;
+    }
+    #organic .titleText{
+        color:white;
+        margin:2rem 0;
+    }
+    #organic .organicTitle{
+        grid-column:span 2;
+    }
+    .organicBt{
+        grid-column:3 / span 4;
+        text-align:end;
+        margin-right:5rem;
+    }
+    .organicBox .product{
+        background-color:#FFF;
+        border-radius:2rem;
+        width:95%;
+        margin:0 auto;
+        padding:2rem;
+    }
+    .organicBox .product img{
+        width:90%;
+        height:auto;      
+    }
+    .organicBox .product .productNum, .organicBox .product .productName{
+        font-weight:600;
+    }
+

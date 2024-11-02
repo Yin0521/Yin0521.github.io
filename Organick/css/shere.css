@@ -1,0 +1,80 @@
+@charset "utf-8";
+/*------------shere------------*/
+    html{
+        font-size:10px;
+        font-family:"Roboto",sans-serif;
+        color: #274C5B;
+    }
+    header,#topcontainer,#news,footer{
+        width:80%;
+        margin:auto;
+    }
+    img{
+        width:100%;
+        height:auto;
+    }
+    .material-icons{
+        vertical-align:middle;
+    }
+    .title{
+        font-size:3.6rem;
+        color:#68A47F;
+        font-family:"Yellowtail";
+    }
+    .yellobt{
+        background-color: #EFD372;
+        padding:2rem;
+        color: #274C5B;
+        font-size:2rem;
+        font-weight:600;
+        border:none;
+        border-radius:1rem;
+        cursor:pointer;
+    }
+    .yellobt:hover{
+        background-color:#EE5;
+        transform:translateY(-5%);
+    }
+    .btarrow{
+        font-size:1.3rem;
+        background-color:#335B6B;
+        color:white;
+        border-radius:100%;
+        padding:4px;
+        vertical-align:middle;
+        margin:0 0 5px 1rem;
+    }
+    .titleText{
+        font-size:5rem;
+        line-height:1.2;
+        font-weight:700;
+    }
+    .contText{
+        font-size:1.8rem;
+        line-height:1.5;
+        color:#525C60;
+    }
+    .aboutIcon{
+        display:grid;
+        grid-template-columns:1fr 4fr;
+        margin:5rem 0;
+    }
+    .contTitle{
+        font-size:2.5rem;
+        font-weight:700;
+    }
+    .bluebt{
+        background-color: #274C5B;
+        padding:2rem;
+        color: white;
+        font-size:2rem;
+        font-weight:600;
+        border:none;
+        border-radius:1rem;
+        cursor:pointer;
+    }
+    .bluebt:hover{
+        background-color:#0F2760;
+        transform:translateY(-5%);
+    }
+

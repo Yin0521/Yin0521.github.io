@@ -1,0 +1,59 @@
+@charset "utf-8";
+/*----------------------section id="categoriesShop"-------------------------------*/
+    #categoriesShop .title,#categoriesShop .titleText{
+        text-align:center;
+        margin:2rem 0;
+    }
+    #productShop{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-gap:2rem;
+    }
+    .productTitle{
+        background-color:#274C5B;
+        color:white;
+        font-size:1.5rem;
+        font-weight:500;
+        padding:0.5rem;
+        border-radius:1rem;
+        width:30%;
+        text-align:center;
+    }
+    .product img{
+        width:300px;
+        height:300px;
+        margin:1rem;
+        background-color:#fff;
+	    box-shadow:0 0.1rem 0.3rem 0.1rem #ddd;
+    }
+    .product a:hover{
+        color:red;
+        text-decoration:underline;
+    }
+    .productName{
+        font-size:2rem;
+        font-weight:500;
+        text-decoration:none;
+        color:#274C5B;
+    }
+    .productName p{
+        margin:1rem 0;
+    }
+    .productNum{
+        font-size:1.5rem;
+    }
+    .through{
+        text-decoration:line-through;
+        color:#B8B8B8;
+    }
+    .star{
+        color:#FFA858;
+        vertical-align:middle;
+        margin-bottom:5px;
+    }
+    .productbt{
+        grid-column:span 4;
+        text-align:center;
+        margin:5rem 0;
+    }
+

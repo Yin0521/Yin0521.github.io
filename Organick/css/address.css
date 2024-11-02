@@ -1,0 +1,65 @@
+@charset "utf-8";
+/*--------------------address-------------------*/
+    address{
+        display:grid;
+        grid-template-columns:1fr 1.5fr 1fr;
+        grid-gap:10rem;
+    }
+    .addressTitle{
+        font-size:3rem;
+        font-weight:600;
+        color: #274C5B;
+    }
+    .addressTextTitle{
+        font-size:1.8rem;
+        font-weight:600;
+        color: #525C60;
+        margin-top:3rem;
+    }
+    .addressText{
+        font-size:1.8rem;
+        color: #525C60;
+        margin-top:2rem;
+    }
+    .addressLeft{
+        text-align: end;
+    }
+    .addressLeft p a{
+        text-decoration:none;
+        color: #525c60;
+    }
+    .addressLeft p a:hover{
+        color:#000;
+    }
+    .addressRight .addressText{
+        margin:3rem 0;
+    }
+    .addressRight .addressText a{
+        text-decoration:none;
+        color:#525C60;
+    }
+    .addressRight .addressText a:hover{
+        color:#000;
+    }
+    .addressMiddle{
+        text-align:center;
+    }
+    .addressMiddle p img{
+        width:40%;
+    }
+    .addressMiddle .addressText{
+        line-height:1.5;
+    }
+    .addressMiddle span img{
+        width:5%;
+        margin:3rem 2rem;
+    }
+    .addressMiddle span a img:hover{
+        transform:translateY(-10%);
+    }
+    .yin{
+        text-align:center;
+        font-size:1.6rem;
+        margin:4rem;
+    }
+

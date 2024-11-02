@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*----------------about-------------------*/
+    #about{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+    }
+    #aboutLeft{
+        width:120%;
+        margin:0 auto;
+    }
+    #abourRight{
+        margin:auto 0;
+    }
+    #abourRight p{
+        margin:1rem 0;
+    }
+    
+    .aboutIcon img{
+        width:50%;
+        margin:0 auto;
+        
+    }
+    .aboutIconContent{
+        width:70%;
+    }
+

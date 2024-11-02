@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*-----------------banner-------------------*/
+    #banner{
+        position: relative;
+    }
+    #banner img{
+        position:relative;
+    }
+    
+    #banner p:nth-child(2n){
+        position:absolute;
+        top:25rem;
+        left:5rem;
+    }
+    #banner p:nth-child(2n-1){
+        font-size:7rem;
+        font-weight:700;
+        color: #274C5B;
+        position:absolute;
+        top:30rem;
+        left:5rem;
+        line-height:1.2;
+    }
+    #banner div{
+        position:absolute;
+        top:60rem;
+        left:5rem;
+    }
+#bannerTitle{
+    font-size:6rem;
+    color:#274C5B;
+    font-weight:700;
+    position:absolute;
+    left:41%;
+    top:40%;
+}

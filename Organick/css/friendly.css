@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*-------------------Friendly----------------------*/
+    #friendly{
+        display:grid;
+        grid-template-columns:1fr 1.5fr;
+    }
+    .friendlyRight{
+        margin: auto 8rem;
+        width: 60%;
+    }
+    .friendlyRight .contTitle{
+        margin:2rem 0;
+    }
+
